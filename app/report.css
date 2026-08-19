@@ -1,0 +1,23 @@
+.scoreSplit { display: grid; grid-template-columns: 1.5fr 1fr; border-bottom: 1px solid var(--line); }
+.scoreSplit > div:first-child { display: grid; grid-template-columns: 1fr 1fr; padding: 24px 30px 26px; gap: 0 24px; }
+.scoreSplit h3 { grid-column: 1 / -1; margin: 0 0 18px; font-family: Georgia, serif; font-size: 22px; }
+.scoreSplit .metric { padding: 0; }
+.readinessCard { border-left: 1px solid var(--line); padding: 25px 30px; background: #f1ece3; }
+.readinessCard span { display: block; font-size: 10px; letter-spacing: .16em; font-weight: bold; color: #71685f; }
+.readinessCard strong { display: block; font-family: Georgia, serif; font-size: 38px; margin: 8px 0 5px; }
+.readinessCard p { margin: 0; font-size: 12px; line-height: 1.5; color: #71685f; }
+.bulletCoach { grid-column: 1 / -1; }
+.bulletSuggestion { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; padding: 17px 0; border-top: 1px solid var(--line); }
+.bulletSuggestion p { margin: 0; padding: 12px 14px; font-size: 13px; line-height: 1.55; background: #f0ebe3; }
+.bulletSuggestion .suggestionLine { border-left: 3px solid var(--orange); background: white; }
+.bulletSuggestion span { display: block; margin-bottom: 5px; font-size: 9px; letter-spacing: .14em; font-weight: bold; color: #766e65; text-transform: uppercase; }
+.bulletSuggestion small { grid-column: 1 / -1; color: #71685f; }
+
+@media (max-width: 760px) {
+  .scoreSplit { grid-template-columns: 1fr; }
+  .scoreSplit > div:first-child { grid-template-columns: 1fr; gap: 18px; }
+  .scoreSplit h3 { grid-column: auto; }
+  .readinessCard { border-left: 0; border-top: 1px solid var(--line); }
+  .bulletSuggestion { grid-template-columns: 1fr; }
+  .bulletSuggestion small { grid-column: auto; }
+}
